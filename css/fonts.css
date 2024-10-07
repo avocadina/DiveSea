@@ -1,0 +1,200 @@
+@font-face {
+    font-family: "Poppins";
+    src: local(""), url("../fonts/Poppins-Medium.woff2") format("woff2"),
+      url("../fonts/Poppins-Medium.woff") format("woff");
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+    font-stretch: normal;
+    /* unicode-range: U+00-FF, U+980-9FF; */
+    font-feature-settings: "pnum" on, "lnum" on, "smps" on;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: local(""), url("../fonts/Poppins-SemiBold.woff2") format("woff2"),
+    url("../fonts/Poppins-SemiBold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+  font-stretch: normal;
+  /* unicode-range: U+00-FF, U+980-9FF; */
+  font-feature-settings: "pnum" on, "lnum" on, "smps" on;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: local(""), url("../fonts/Poppins-Regular.woff2") format("woff2"),
+    url("../fonts/Poppins-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  font-stretch: normal;
+  /* unicode-range: U+00-FF, U+980-9FF; */
+  font-feature-settings: "pnum" on, "lnum" on, "smps" on;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: local(""), url("../fonts/Inter-Medium.woff2") format("woff2"),
+    url("../fonts/Inter-Medium.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  font-stretch: normal;
+  /* unicode-range: U+00-FF, U+980-9FF; */
+  font-feature-settings: "pnum" on, "lnum" on, "smps" on;
+}
+
+@font-face {
+  font-family: "Manrope";
+  src: local(""), url("../fonts/Manrope-Semibold.woff2") format("woff2"),
+    url("../fonts/Manrope-Semibold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+  font-stretch: normal;
+  /* unicode-range: U+00-FF, U+980-9FF; */
+  font-feature-settings: "pnum" on, "lnum" on, "smps" on;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: local(""), url("../fonts/Inter-SemiBold.woff2") format("woff2"),
+    url("../fonts/Inter-SemiBold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+  font-stretch: normal;
+  /* unicode-range: U+00-FF, U+980-9FF; */
+  font-feature-settings: "pnum" on, "lnum" on, "smps" on;
+}
+
+@font-face {
+  font-family: "DM Sans";
+  src: local(""), url("../fonts/DMSans-Bold.woff2") format("woff2"),
+    url("../fonts/DMSans-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+  font-stretch: normal;
+  /* unicode-range: U+00-FF, U+980-9FF; */
+  font-feature-settings: "pnum" on, "lnum" on, "smps" on;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: local(""), url("../fonts/Roboto-Regular.woff2") format("woff2"),
+    url("../fonts/Roboto-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  font-stretch: normal;
+  /* unicode-range: U+00-FF, U+980-9FF; */
+  font-feature-settings: "pnum" on, "lnum" on, "smps" on;
+}
+
+@font-face {
+  font-family: "Public Sans";
+  src: local(""), url("../fonts/PublicSans-SemiBold.woff2") format("woff2"),
+    url("../fonts/PublicSans-SemiBold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+  font-stretch: normal;
+  /* unicode-range: U+00-FF, U+980-9FF; */
+  font-feature-settings: "pnum" on, "lnum" on, "smps" on;
+}
+
+@font-face {
+  font-family: "Outfit";
+  src: local(""), url("../fonts/Outfit-Medium.ttf") format("ttf");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+  font-stretch: normal;
+  /* unicode-range: U+00-FF, U+980-9FF; */
+  font-feature-settings: "pnum" on, "lnum" on, "smps" on;
+}
+
+@font-face {
+  font-family: "Outfit";
+  src: local(""), url("../fonts/Outfit-SemiBold.ttf") format("ttf");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+  font-stretch: normal;
+  /* unicode-range: U+00-FF, U+980-9FF; */
+  font-feature-settings: "pnum" on, "lnum" on, "smps" on;
+}
+
+@font-face {
+  font-family: "Urbanist";
+  src: local(""), url("../fonts/Urbanist-Regular.woff2") format("woff2"),
+    url("../fonts/Urbanist-Regular.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+  font-stretch: normal;
+  /* unicode-range: U+00-FF, U+980-9FF; */
+  font-feature-settings: "pnum" on, "lnum" on, "smps" on;
+}
+
+@font-face {
+  font-family: "Manrope";
+  src: local(""), url("../fonts/Manrope-ExtraBold.woff2") format("woff2"),
+    url("../fonts/Manrope-ExtraBold.woff") format("woff");
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+  font-stretch: normal;
+  /* unicode-range: U+00-FF, U+980-9FF; */
+  font-feature-settings: "pnum" on, "lnum" on, "smps" on;
+}
+
+@font-face {
+  font-family: "Public Sans";
+  src: local(""), url("../fonts/PublicSans-Bold.woff2") format("woff2"),
+    url("../fonts/PublicSans-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+  font-stretch: normal;
+  /* unicode-range: U+00-FF, U+980-9FF; */
+  font-feature-settings: "pnum" on, "lnum" on, "smps" on;
+}
+
+@font-face {
+  font-family: "Outfit";
+  src: local(""), url("../fonts/Outfit-Regular.ttf") format("ttf");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  font-stretch: normal;
+  /* unicode-range: U+00-FF, U+980-9FF; */
+  font-feature-settings: "pnum" on, "lnum" on, "smps" on;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: local(""), url("../fonts/Roboto-Bold.woff2") format("woff2"),
+    url("../fonts/Roboto-Bold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+  font-stretch: normal;
+  /* unicode-range: U+00-FF, U+980-9FF; */
+  font-feature-settings: "pnum" on, "lnum" on, "smps" on;
+}
+
+@font-face {
+  font-family: "Plus Jakarta Sans";
+  src: local(""), url("../fonts/PlusJakartaSans-Regular.woff2") format("woff2"),
+    url("../fonts/PlusJakartaSans-Regular.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+  font-stretch: normal;
+  /* unicode-range: U+00-FF, U+980-9FF; */
+  font-feature-settings: "pnum" on, "lnum" on, "smps" on;
+}

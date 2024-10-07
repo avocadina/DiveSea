@@ -1,0 +1,22 @@
+.title {
+    margin: 0;
+    padding: 0;
+}
+
+.title--18 {
+    font-family: var(--second-family);
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 156%;
+    text-align: justify;
+    color: #676767;
+}
+
+.title--75 {
+    font-weight: 600;
+    font-size: 75px;
+    line-height: 120%;
+    letter-spacing: -0.04em;
+    text-transform: capitalize;
+    color: #141416;
+}

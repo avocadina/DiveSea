@@ -1,0 +1,15 @@
+/* global */
+@import url("./fonts.css");
+@import url("./vars.css");
+@import url("./settings.css");
+
+/* blocks */
+@import url("./blocks/button.css");
+@import url("./blocks/search-bar.css");
+@import url("./blocks/logo.css");
+@import url("./blocks/header.css");
+@import url("./blocks/title.css");
+@import url("./blocks/span.css");
+
+/* index */
+@import url("./blocks/hero.css");

@@ -1,0 +1,17 @@
+:root {
+    --font-family: "Poppins", sans-serif;
+    --second-family: "Inter", sans-serif;
+    --third-family: "Manrope", sans-serif;
+    --font3: "Outfit", sans-serif;
+    --font4: "DM Sans", sans-serif;
+    --font5: "Public Sans", sans-serif;
+    --font6: "Roboto", sans-serif;
+    --font7: "Urbanist", sans-serif;
+    --font8: "Plus Jakarta Sans", sans-serif;
+
+    --container-width: 1210px;
+    --container-offset: 15px;
+
+    --btn-trs: transform 0.3s ease, color 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+    --nav-trs: transform 0.3s ease, opacity 0.3s ease;
+}

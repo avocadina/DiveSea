@@ -1,0 +1,87 @@
+.hero__container {
+    display: flex;
+    align-items: flex-start;
+    gap: 48px;
+
+    overflow: visible;
+}
+
+.hero__content {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 82px;
+    margin-right: 66px;
+    width: 46%;
+}
+
+.hc__heading {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 45px;
+    width: 499px;
+}
+
+.hc-heading__title {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+}
+
+.hero__subtitle {
+    position: relative;
+}
+
+.hero__subtitle::after {
+    content: '$20 bonus.';
+    font-weight: 600;
+    color: #141416;
+}
+
+.hc-heading__buttons {
+    display: flex;
+    align-items: center;
+    gap: 23px;
+}
+
+.statistics__list {
+    display: flex;
+    align-items: center;
+    gap: 65px;
+}
+
+.statistics__item {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 6px;
+}
+
+.hero__slider {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 47px;
+}
+
+.hero-slider__list {
+    display: flex;
+    gap: 36px;
+}
+
+.hero-slider__item {
+    width: 391px;
+    height: 394px;
+    transition: transform 0.5s ease;
+
+    background: url('../../img/hero/hero-img1.png') no-repeat center;
+    background-size: cover;
+}
+
+.hero-slider__item--disabled {
+    width: 319px;
+    height: 322px;
+    transform: translateY(181px);
+}
