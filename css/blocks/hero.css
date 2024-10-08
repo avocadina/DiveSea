@@ -4,6 +4,7 @@
     gap: 48px;
 
     overflow: visible;
+    position: relative;
 }
 
 .hero__content {
@@ -62,19 +63,32 @@
 .hero__slider {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
     gap: 47px;
+
+    position: relative;
+    padding-bottom: 117px;
+    min-width: 727px;
+    min-height: 524px;
+
+    background: url('../../img/hero/Arrow\ 01.png') no-repeat 413px 41px,
+    url('../../img/hero/Group\ 427320330.png') no-repeat 99% top;
 }
 
 .hero-slider__list {
     display: flex;
     gap: 36px;
+    min-width: 727px;
+    min-height: 524px;
 }
 
 .hero-slider__item {
     width: 391px;
     height: 394px;
-    transition: transform 0.5s ease;
+    transition: var(--hero-trs);
+    transform: translate(0, 0);
+    position: absolute;
+    z-index: 1;
 
     background: url('../../img/hero/hero-img1.png') no-repeat center;
     background-size: cover;
@@ -83,5 +97,27 @@
 .hero-slider__item--disabled {
     width: 319px;
     height: 322px;
-    transform: translateY(181px);
+    transform: translate(420px, 181px);
+    z-index: 0;
 }
+
+#hero2 {
+    background: url('../../img/hero/hero-img2.png') no-repeat center;
+    background-size: cover;
+}
+
+.hero-slider__buttons {
+    display: flex;
+    align-items: center;
+    gap: 35px;
+
+    padding: 22px;
+    background-color: #fcfcfd;
+    box-shadow: 0 43px 34px -26px rgba(15, 15, 15, 0.12);
+    border-radius: 17px;
+
+    position: absolute;
+    bottom: 0;
+    left: 112px;
+}
+

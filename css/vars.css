@@ -14,4 +14,5 @@
 
     --btn-trs: transform 0.3s ease, color 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
     --nav-trs: transform 0.3s ease, opacity 0.3s ease;
+    --hero-trs: width 0.5s ease, height 0.5s ease, transform 0.5s ease-in, z-index 0.5s ease;
 }

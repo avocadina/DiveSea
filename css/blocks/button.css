@@ -46,6 +46,11 @@
     padding: 0;
 }
 
+.prev {
+    padding-right: 35px;
+    border-right: 1px solid #e6e8ec;
+}
+
 
 @media (any-hover: hover) {
     .btn--vector:hover svg path {

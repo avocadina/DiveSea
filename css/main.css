@@ -11,6 +11,7 @@
 @import url("./blocks/title.css");
 @import url("./blocks/span.css");
 @import url("./blocks/burger.css");
+@import url("./blocks/animations.css");
 
 /* index */
 @import url("./blocks/hero.css");
