@@ -1,3 +1,7 @@
+.hero {
+    margin-bottom: 143px;
+}
+
 .hero__container {
     display: flex;
     align-items: flex-start;
@@ -106,6 +110,7 @@
 }
 
 .hero-slider__buttons {
+    position: absolute;
     bottom: 0;
     left: 112px;
 }

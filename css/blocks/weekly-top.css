@@ -1,0 +1,94 @@
+.weekly-top {
+    margin-bottom: 120px;
+    padding-bottom: 116px;
+}
+
+.weekly__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 100px;
+
+    background-color: #f1f1f1;
+    padding: 70px 0 90px 0;
+}
+
+.weekly__slider {
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 115px;
+}
+
+.weekly-slider__list {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    transition: margin-left 0.3s ease;
+
+}
+
+.weekly-slider__card {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 19px;
+
+    background-color: #fff;
+    box-shadow: 39px 12px 59px 0 rgba(199, 199, 199, 0.6);
+    border-radius: 23px;
+    padding: 14px 14px 20px 14px;
+}
+
+.weekly-slider__card img {
+    display: block;
+    object-fit: cover;
+}
+
+.ws-card__content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 14px;
+}
+
+.wc-content__bid {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.bid {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
+}
+
+.bid__top {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+    letter-spacing: 0.01em;
+    color: #94a3b8;
+}
+
+.bid__bottom {
+    display: flex;
+    align-items: center;
+
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+    color: #141416;
+}
+
+.bid__bottom svg {
+    display: block;
+}
+
+.weekly-slider__buttons {
+    position: relative;
+}
