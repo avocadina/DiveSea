@@ -51,6 +51,10 @@
     border-right: 1px solid #e6e8ec;
 }
 
+.btn--weekly {
+    padding: 12px 21px;
+}
+
 
 @media (any-hover: hover) {
     .btn--vector:hover svg path {

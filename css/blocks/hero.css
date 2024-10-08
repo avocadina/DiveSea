@@ -106,16 +106,6 @@
 }
 
 .hero-slider__buttons {
-    display: flex;
-    align-items: center;
-    gap: 35px;
-
-    padding: 22px;
-    background-color: #fcfcfd;
-    box-shadow: 0 43px 34px -26px rgba(15, 15, 15, 0.12);
-    border-radius: 17px;
-
-    position: absolute;
     bottom: 0;
     left: 112px;
 }
