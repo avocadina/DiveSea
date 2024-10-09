@@ -62,3 +62,29 @@ if (heroSlider) {
         }
     })
 }
+
+// счётчик для числа
+
+let el = document.querySelectorAll('.span--statistics-title');
+
+function draw(t){
+  el.forEach(el => {
+    let d = el.dataset
+    el.textContent = Math.min(t/+d.delay, +d.value).toFixed(+d.precision)
+  });
+  requestAnimationFrame(draw);
+}
+
+requestAnimationFrame(draw);
+
+// анимации появления
+
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('appearElement');
+        };
+    });
+});
+
+observer.observe(document.querySelector('.weekly-top'));

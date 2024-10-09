@@ -1,5 +1,5 @@
 .hero {
-    margin-bottom: 143px;
+    margin-bottom: 250px;
     
     overflow-x: hidden;
 }
@@ -63,6 +63,18 @@
     flex-direction: column;
     align-items: flex-start;
     gap: 6px;
+}
+
+#statistics1 {
+    width: 118px;
+}
+
+#statistics2 {
+    width: 111px;
+}
+
+#statistics3 {
+    width: 94px;
 }
 
 .hero__slider {

@@ -2,7 +2,7 @@ span {
     display: inline-flex;
 }
 
-.span--statistics-title {
+.statistics-title {
     font-family: var(--font5);
     font-weight: 600;
     font-size: 36px;

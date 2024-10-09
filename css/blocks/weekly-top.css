@@ -2,6 +2,8 @@
     margin-bottom: 120px;
     padding-bottom: 116px;
     position: relative;
+
+    transition: transform 0.3s ease, opacity 0.3s ease;
 }
 
 .weekly__container {
