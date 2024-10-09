@@ -47,9 +47,19 @@
     padding: 14px 14px 20px 14px;
 }
 
-.weekly-slider__card img {
+.ws-card__image {
+    overflow: hidden;
+    border-radius: 27px;
+    width: 252px;
+    height: 252px;
+}
+
+.ws-card__image img {
     display: block;
     object-fit: cover;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.3s ease-in;
 }
 
 .ws-card__content {
@@ -96,4 +106,10 @@
 
 .weekly-slider__buttons {
     position: relative;
+}
+
+@media (any-hover: hover) {
+    .ws-card__image:hover img {
+        transform: scale(1.1);
+    }
 }
