@@ -6,6 +6,11 @@
 
 html {
     scroll-behavior: smooth;
+}
+
+.no-touch {
+    touch-action: manipulation;
+    scroll-behavior: smooth;
     overflow-x: hidden;
 }
 

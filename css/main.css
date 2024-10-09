@@ -16,4 +16,5 @@
 
 /* index */
 @import url("./blocks/hero.css");
-@import url("./blocks/weekly-top.css")
+@import url("./blocks/weekly-top.css");
+@import url("./blocks/recent-viewed.css");

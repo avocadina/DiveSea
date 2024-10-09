@@ -1,5 +1,7 @@
-//hero slider
+const windowWidth = window.innerWidth;
+console.log(windowWidth);
 
+//hero slider
 const heroSlider = document.querySelector('.hero__slider');
 
 if (heroSlider) {   
@@ -20,37 +22,43 @@ if (heroSlider) {
 
 //weekly slider
 
-const weeklySlider = document.querySelector('.weekly-slider__list');
+const weeklySlider = document.querySelector('.weekly__wrapper');
+const weeklyList = document.querySelector('.weekly-slider__list');
+const weeklyItem = document.querySelectorAll('.weekly-slider__item');
 
 if (heroSlider) {   
     const weeklyPrev = document.querySelector('.weekly-prev');
     const weeklyNext = document.querySelector('.weekly-next');
 
     weeklyNext.addEventListener('click', () => {
-        var width = 300;
-        var gap = 40;
-        var current = getComputedStyle(weeklySlider).marginLeft;
+        var currentMargin = getComputedStyle(weeklyList).marginLeft; //Каждый раз узнаю какой отступ у элемента
+        const currentWidth = 2528; // Это ширина списка для слайдера, всегда одинакова
 
-        var minMargin = -(parseInt(width) + parseInt(gap))*2;
+        var gap = getComputedStyle(weeklyList).gap; // Это отступ между элементами списка
+        var width = parseInt(getComputedStyle(weeklyItem[0]).width) + parseInt(gap); //Это то расстояние, на которое нужно сделать отступ по нажатию
 
-        weeklySlider.style.marginLeft = parseInt(current) - parseInt(gap) - parseInt(width) + 'px';
-        var marginNumber = parseInt(current) - parseInt(gap) - parseInt(width);
+        var minMargin = Math.floor(-(currentWidth - windowWidth)); // Узнаю минимальный отступ, чтобы не получилось, что список бесконечно перемещается
+
+        weeklyList.style.marginLeft = parseInt(currentMargin) - width + 'px'; // Изменяю отступ по нажатию
+        var marginNumber = parseInt(currentMargin); // Вспомогательный элемент для проверки выхода за пределы минимального отступа
+
         if (marginNumber < minMargin) {
-            weeklySlider.style.marginLeft = '0px';
+            weeklyList.style.marginLeft = '0px'; // Проверка выхода за пределы минимального отступа
         }
     });
-
     weeklyPrev.addEventListener('click', () => {
-        var width = 300;
-        var gap = 40;
-        var current = getComputedStyle(weeklySlider).marginLeft;
+        var currentMargin = parseInt(getComputedStyle(weeklyList).marginLeft); //Каждый раз узнаю какой отступ у элемента
+        const currentWidth = 2528; // Это ширина списка для слайдера, всегда одинакова
 
-        var maxMargin = (parseInt(width) + parseInt(gap))*2;
+        var gap = getComputedStyle(weeklyList).gap; // Это отступ между элементами списка
+        var width = parseInt(getComputedStyle(weeklyItem[0]).width) + parseInt(gap); //Это то расстояние, на которое нужно сделать отступ по нажатию
 
-        weeklySlider.style.marginLeft = parseInt(current) + parseInt(gap) + parseInt(width) + 'px';
-        var marginNumber = parseInt(current) + parseInt(gap) + parseInt(width);
-        if (marginNumber > maxMargin) {
-            weeklySlider.style.marginLeft = '0px';
+        var maxMargin = Math.floor(currentWidth - windowWidth); // Узнаю максимальный отступ, чтобы не получилось, что список бесконечно перемещается
+
+        weeklyList.style.marginLeft = currentMargin + width + 'px'; // Изменяю отступ по нажатию
+
+        if (currentMargin > maxMargin) {
+            weeklyList.style.marginLeft = '0px'; // Проверка выхода за пределы максимального отступа
         }
-    });
+    })
 }

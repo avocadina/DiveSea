@@ -41,3 +41,31 @@ span {
     line-height: 150%;
     color: #141416;
 }
+
+.span--author-name {
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 140%;
+    color: #141416;
+}
+
+.span--author-nick {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 150%;
+    color: #64748b;
+}
+
+.span--green {
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 150%;
+    color: #10c352;
+}
+
+.span--red {
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 150%;
+    color: #e23333;
+}

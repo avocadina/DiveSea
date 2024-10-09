@@ -1,6 +1,7 @@
 .weekly-top {
     margin-bottom: 120px;
     padding-bottom: 116px;
+    position: relative;
 }
 
 .weekly__container {
@@ -11,6 +12,7 @@
 
     background-color: #f1f1f1;
     padding: 70px 0 90px 0;
+    overflow-x: hidden;
 }
 
 .weekly__slider {
@@ -22,12 +24,15 @@
     gap: 115px;
 }
 
+.weekly__wrapper {
+    width: 100%;
+}
+
 .weekly-slider__list {
     display: flex;
     align-items: center;
     gap: 40px;
     transition: margin-left 0.3s ease;
-
 }
 
 .weekly-slider__card {

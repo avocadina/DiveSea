@@ -1,0 +1,74 @@
+.weekly__recent {
+    position: absolute;
+    right: 99px;
+    bottom: 0;
+    z-index: 1;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 365px;
+    gap: 28px;
+
+    box-shadow: 10px 10px 50px 0 rgba(20, 20, 22, 0.1);
+    background: #fff;
+    border: 1px solid #edf2f7;
+    border-radius: 16px;
+    padding: 26px 24px 21px;
+}
+
+.recent__heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.r-heading__button svg{
+    display: block;
+}
+
+.recent__list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+}
+
+.recent__item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 4px 0;
+}
+
+.recent__author {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.r-author__image img {
+    display: block;
+    object-fit: cover;
+}
+
+.r-author__name {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+}
+
+.recent__bid {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 8px;
+}
+
+.r-bid__top {
+    display: flex;
+    align-items: center;
+    gap: 2px;
+}
