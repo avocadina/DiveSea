@@ -12,7 +12,7 @@
 
     font-family: var(--second-family);
     font-weight: 600;
-    font-size: 16px;
+    font-size: clamp(0.688rem, -0.082rem + 1.2vw, 1rem);
     line-height: 150%;
     text-transform: uppercase;
     text-decoration: none;
@@ -43,15 +43,20 @@
 .btn--slider {
     background-color: inherit;
     border-radius: 0;
-    padding: 0;
 }
 
-.prev {
+.btn--slider:first-of-type {
     padding-right: 35px;
     border-right: 1px solid #e6e8ec;
 }
 
+.hero-prev {
+    padding: 0 35px 0;
+    border-right: 1px solid #e6e8ec;
+}
+
 .btn--weekly {
+    font-family: var(--font-family);
     padding: 12px 21px;
 }
 

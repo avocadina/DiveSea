@@ -1,7 +1,7 @@
 .slider__buttons {
     display: flex;
     align-items: center;
-    gap: 35px;
+    gap: 34px;
 
     padding: 22px;
     background-color: #fcfcfd;

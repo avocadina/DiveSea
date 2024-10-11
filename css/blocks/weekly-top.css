@@ -49,6 +49,10 @@
     padding: 14px 14px 20px 14px;
 }
 
+.weekly-slider__buttons button svg {
+    display: block;
+}
+
 .ws-card__image {
     overflow: hidden;
     border-radius: 27px;
@@ -97,7 +101,7 @@
     align-items: center;
 
     font-weight: 500;
-    font-size: 16px;
+    font-size: clamp(0.625rem, 0.518rem + 0.54vw, 1rem);;
     line-height: 150%;
     color: #141416;
 }
@@ -106,9 +110,6 @@
     display: block;
 }
 
-.weekly-slider__buttons {
-    position: relative;
-}
 
 @media (any-hover: hover) {
     .ws-card__image:hover img {

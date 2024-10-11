@@ -61,6 +61,10 @@ if (heroSlider) {
             weeklyList.style.marginLeft = '0px'; // Проверка выхода за пределы максимального отступа
         }
     })
+
+    if (parseInt(currentWidth) <= 1280) {
+        
+    }
 }
 
 // счётчик для числа

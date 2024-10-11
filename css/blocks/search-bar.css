@@ -18,7 +18,8 @@
     border: none;
     padding: 0;
     margin: 0;
-    max-width: 197px;
+    max-width: fit-content;
+    justify-content: center;
 }
 
 .search__input:focus {
@@ -28,9 +29,8 @@
 
 .search__input::placeholder {
     font-weight: 500;
-    font-size: 15px;
+    font-size: clamp(0.75rem, 0.288rem + 0.72vw, 0.938rem);
     line-height: 117%;
     letter-spacing: -0.02em;
     color: #c2c3cb;
 }
-
