@@ -1,4 +1,4 @@
-@media (max-width: 1280px) {
+@media (max-width: 1279.98px) {
     .btn {
         padding: 12px 17px;
     }
@@ -49,6 +49,10 @@
         width: 15px;
         height: 15px;
     }
+
+    /* index */
+
+    /* hero */
 
     .header {
         margin-bottom: 80px;
@@ -126,6 +130,8 @@
         gap: 46px;
     }
 
+
+    /* weekly */
     .weekly-slider__list {
         gap: 29px;
     }
@@ -182,5 +188,114 @@
 
     .r-bid__bot span {
         font-size: 10px;
+    }
+}
+
+@media (max-width: 1023.98px) {
+    /* index */
+    .header__left {
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .header__right {
+        display: none;
+    }
+    /* hero */
+
+    .hero {
+        margin-bottom: 114px;
+    }
+
+    .hero__container {
+        flex-direction: column;
+        align-items: center;
+        gap: 71px;
+    }
+
+    .hero__content {
+        width: 100%;
+        margin-right: 0;
+        align-items: center;
+    }
+
+    .hc__heading {
+        align-items: center;
+    }
+
+    .hc-heading__title {
+        align-items: center;
+    }
+
+    .hc__heading .title {
+        width: fit-content;
+        text-align: center;
+    }
+
+    .hc__statistics {
+        display: none;
+    }
+    /* weekly */
+
+    .weekly__container {
+        padding: 57px 0;
+    }
+
+    .weekly__slider {
+        gap: 60px;
+    }
+}
+
+@media (max-width: 767.98px) {
+    /* index */
+    /* header */
+
+    .header__container {
+        flex-direction: column;
+    }
+
+    .nav {
+        display: none;
+    }
+
+    .nav--active {
+        display: block;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        border-radius: 0 0 8px 8px;
+        border-bottom: 1px solid #282828;
+
+        transition: top 0.3s ease-out, left 0.3s ease-out, display 0.3s ease-out;
+    }
+
+    .nav--active .nav__list {
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        background-color: #f9f9f9;
+        z-index: 1;
+        position: relative;
+        gap: 15px;
+        padding-bottom: 15px;
+    }
+
+    .burger {
+        display: block;
+    }
+    /* hero */
+    
+    .hero__content {
+        gap: 20px;
+    }
+    /* weekly */
+
+    .weekly__recent {
+        display: none;
+    }
+
+    .trustipilot {
+        display: block;
     }
 }

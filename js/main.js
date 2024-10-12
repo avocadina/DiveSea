@@ -1,6 +1,3 @@
-const windowWidth = window.innerWidth;
-console.log(windowWidth);
-
 //hero slider
 const heroSlider = document.querySelector('.hero__slider');
 
@@ -30,10 +27,11 @@ if (heroSlider) {
     const weeklyPrev = document.querySelector('.weekly-prev');
     const weeklyNext = document.querySelector('.weekly-next');
 
+    var windowWidth = 1440;
+    const currentWidth = 2528; // Это ширина списка для слайдера, всегда одинакова
+
     weeklyNext.addEventListener('click', () => {
         var currentMargin = getComputedStyle(weeklyList).marginLeft; //Каждый раз узнаю какой отступ у элемента
-        const currentWidth = 2528; // Это ширина списка для слайдера, всегда одинакова
-
         var gap = getComputedStyle(weeklyList).gap; // Это отступ между элементами списка
         var width = parseInt(getComputedStyle(weeklyItem[0]).width) + parseInt(gap); //Это то расстояние, на которое нужно сделать отступ по нажатию
 
@@ -48,7 +46,6 @@ if (heroSlider) {
     });
     weeklyPrev.addEventListener('click', () => {
         var currentMargin = parseInt(getComputedStyle(weeklyList).marginLeft); //Каждый раз узнаю какой отступ у элемента
-        const currentWidth = 2528; // Это ширина списка для слайдера, всегда одинакова
 
         var gap = getComputedStyle(weeklyList).gap; // Это отступ между элементами списка
         var width = parseInt(getComputedStyle(weeklyItem[0]).width) + parseInt(gap); //Это то расстояние, на которое нужно сделать отступ по нажатию
@@ -61,10 +58,6 @@ if (heroSlider) {
             weeklyList.style.marginLeft = '0px'; // Проверка выхода за пределы максимального отступа
         }
     })
-
-    if (parseInt(currentWidth) <= 1280) {
-        
-    }
 }
 
 // счётчик для числа
@@ -92,3 +85,32 @@ const observer = new IntersectionObserver((entries) => {
 });
 
 observer.observe(document.querySelector('.weekly-top'));
+
+// burger
+
+const burger = document.querySelector('.burger');
+const nav = document.querySelector('.nav');
+const header = document.querySelector('.header');
+
+burger.addEventListener('click', () => {
+    burger.classList.toggle('burger--active');
+    nav.classList.toggle('nav--active');
+})
+
+    //scroll
+
+    let oldScrollTopPosition = document.documentElement.scrollTop;
+
+    window.addEventListener('scroll', function() {
+        let scrollTopPosition = document.documentElement.scrollTop;
+    
+        if (oldScrollTopPosition < scrollTopPosition) {
+            this.document.querySelector('.header').classList.add('header--hidden');
+            this.document.querySelector('.nav').classList.remove('nav--active');
+            this.document.querySelector('.burger').classList.remove('burger--active');
+            oldScrollTopPosition = scrollTopPosition;
+        } else if (oldScrollTopPosition > scrollTopPosition) {
+            this.document.querySelector('.header').classList.remove('header--hidden');
+            oldScrollTopPosition = scrollTopPosition;
+        }
+    })

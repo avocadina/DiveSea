@@ -69,3 +69,13 @@ span {
     line-height: 150%;
     color: #e23333;
 }
+
+.span--trustipilot {
+    font-family: var(--font8);
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 150%;
+    color: #334155;
+    
+    opacity: 0.8;
+}

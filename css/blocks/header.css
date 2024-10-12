@@ -1,5 +1,15 @@
 .header {
     margin-bottom: 111px;
+    position: sticky;
+    top: -5px;
+    background-color: inherit;
+    z-index: 10;
+
+    transition: top 0.3s ease-out;
+}
+
+.header--hidden {
+    top: -10%;
 }
 
 .header__container {
@@ -16,10 +26,17 @@
     gap: 57px;
 }
 
+.nav {
+    transition: top 0.3s ease-out, left 0.3s ease-out, display 0.3s ease-out, position 0.3s ease-out;
+
+}
+
 .nav__list {
     display: flex;
     align-items: center;
     gap: 36px;
+
+    transition: opacity 0.3s ease-out, transform 0.3s ease-out, background-color 0.3s ease;
 }
 
 .nav__item {

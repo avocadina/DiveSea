@@ -1,0 +1,25 @@
+.trusipilot {
+    display: none;
+}
+
+.trustipilot__container {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.trustipilot__rating {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+}
+
+.trusipilot__image svg {
+    display: block;
+    width: 99px;
+    height: 24px;
+}
+
+.trustipilot__rating svg {
+    display: block;
+}
