@@ -197,7 +197,7 @@
         width: 100%;
         justify-content: space-between;
     }
-
+    
     .header__right {
         display: none;
     }
@@ -248,29 +248,42 @@
 
 @media (max-width: 767.98px) {
     /* index */
+    .title--75 {
+        font-size: 47px;
+    }
+
+    .hero__subtitle {
+        font-size: 11px;
+    }
+
     /* header */
+
+    .hero-slider__list {
+        overflow-x: hidden;
+    }
 
     .header__container {
         flex-direction: column;
     }
 
     .nav {
-        display: none;
+        position: absolute;
+        transform: translateY(-200px);
+        width: 100%;
+        opacity: 0;
+        border-radius: 0 0 10px 10px;
+        border-bottom: 1px solid #282828;
+        border-bottom-style: opacity(0.5);
     }
 
     .nav--active {
         display: block;
         position: absolute;
-        top: 60px;
-        left: 0;
-        width: 100%;
-        border-radius: 0 0 8px 8px;
-        border-bottom: 1px solid #282828;
-
-        transition: top 0.3s ease-out, left 0.3s ease-out, display 0.3s ease-out;
+        transform: translateY(80px);
+        opacity: 1;
     }
 
-    .nav--active .nav__list {
+    .nav .nav__list {
         flex-direction: column;
         flex-wrap: wrap;
         justify-content: center;
@@ -285,9 +298,39 @@
         display: block;
     }
     /* hero */
+
+    .hero__container {
+        align-items: flex-start;
+        max-width: 100%;
+    }
     
     .hero__content {
         gap: 20px;
+        max-width: 100%;
+    }
+
+    .hc__heading {
+        max-width: 70%;
+    }
+
+    .hero__slider {
+        width: 400px;
+        height: 285px;
+
+        background: url('../img/hero/arrow-mob.png') no-repeat 220px 30px,
+        url('../img/hero/dot-lap.svg') no-repeat right top;
+    }
+
+    .hero-slider__item {
+        width: 209px;
+        height: 223px;
+        overflow: hidden;
+    }
+
+    .hero-slider__item--disabled {
+        width: 171px;
+        height: 183px;
+        transform: translate(230px, 95px)
     }
     /* weekly */
 

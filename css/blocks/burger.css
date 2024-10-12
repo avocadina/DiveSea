@@ -28,7 +28,7 @@
 
 .burger__line:nth-child(2){
     transform-origin: center;
-    top: 10.5px;
+    top: 10px;
 }
 
 .burger__line:last-child{
