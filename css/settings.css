@@ -23,6 +23,7 @@ html {
     font-family: var(--font-family);
 
     background-color: #f9f9f9;
+    overflow-x: hidden;
 }
 
 .container {

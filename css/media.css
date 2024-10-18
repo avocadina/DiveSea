@@ -201,6 +201,10 @@
     .header__right {
         display: none;
     }
+
+    .trustipilot {
+        display: block;
+    }
     /* hero */
 
     .hero {
@@ -260,6 +264,10 @@
 
     .hero-slider__list {
         overflow-x: hidden;
+    }
+
+    .hero-slider__buttons {
+        left: 50px;
     }
 
     .header__container {
