@@ -4,12 +4,14 @@
     top: -5px;
     background-color: inherit;
     z-index: 10;
+    padding-bottom: 15px;
 
     transition: top 0.3s ease-out;
 }
 
 .header--hidden {
-    top: -10%;
+    top: -20%;
+
 }
 
 .header__container {
